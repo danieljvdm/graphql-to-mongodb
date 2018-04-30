@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc -p .",
-    "publish-now": "npm run build && npm publish"
+    "postinstall": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/Soluto/graphql-to-mongodb#readme",
   "devDependencies": {
-    "@types/graphql": "^0.12.4"
+    "@types/graphql": "^0.12.4",
+    "typescript": "^2.8.3"
   },
   "peerDependencies": {
     "graphql": ">=0.10"
